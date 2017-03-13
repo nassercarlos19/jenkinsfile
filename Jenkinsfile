@@ -27,7 +27,7 @@ node{
     def git_repo_url = 'http://192.168.204.83:8080/TestLoginGroup/TestLoginTest.git' // * CHANGE IT
     def gitGroup = 'TestLoginGroup' // * CHANGE IT
     def gitRepositoryName = 'TestLoginTest' // * CHANGE IT
-    def branchName = env.BRANCH_NAME.split('-')[0] // DO NOT CHANGE    
+    def branchName = 'sprint'//env.BRANCH_NAME.split('-')[0] // DO NOT CHANGE    
     
     //Nexus configuration
     def nexusHttpPort = '8083'
