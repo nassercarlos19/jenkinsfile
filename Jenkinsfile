@@ -16,6 +16,8 @@ def run_remote_docker(String file_path, String host, String cmd) {
 node{
     // NOTE: "*" means there is something to change
     
+	print env
+	
     //Global configurations
     def IPServer = '192.168.204.83'    
     def masterNode = '192.168.204.82'   
