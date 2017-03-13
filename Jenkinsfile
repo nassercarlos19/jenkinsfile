@@ -16,7 +16,10 @@ def run_remote_docker(String file_path, String host, String cmd) {
 node{
     // NOTE: "*" means there is something to change
     
-	print env
+sh 'env > env.txt' 
+for (String i : readFile('env.txt').split("\r?\n")) {
+    println i
+}
 	
     //Global configurations
     def IPServer = '192.168.204.83'    
