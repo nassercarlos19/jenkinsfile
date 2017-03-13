@@ -27,7 +27,8 @@ node{
     def git_repo_url = 'http://192.168.204.83:8080/TestLoginGroup/TestLoginTest.git' // * CHANGE IT
     def gitGroup = 'TestLoginGroup' // * CHANGE IT
     def gitRepositoryName = 'TestLoginTest' // * CHANGE IT
-    def branchName = 'sprint'//env.BRANCH_NAME.split('-')[0] // DO NOT CHANGE    
+		env.BRANCH_NAME = 'sprint-v1.0.0'
+    def branchName = env.BRANCH_NAME.split('-')[0] // DO NOT CHANGE    
     
     //Nexus configuration
     def nexusHttpPort = '8083'
@@ -39,6 +40,7 @@ node{
     //Docker repository
     def dockerRepository = 'portalviews-image-snapshot' // * CHANGE IT
     def dockerRepositoryHttps = '8447' // * CHANGE IT
+
  
     
     switch (branchName){
