@@ -136,6 +136,7 @@ node{
                 
             }
             
+	    /*
             stage('Deploy to dev env'){
                     run_remote_docker(  '~/.ssh/login-private-key',
             		                    masterNode,
@@ -147,6 +148,7 @@ node{
             		                    masterNode,
             		                    './'+projectName+'-script.sh '+IPServer+':'+dockerRepositoryHttps+'/'+dockerRepository+':'+finalVersion+' dev'+' 4; rm '+projectName+'-script.sh '+projectName+'-create.sh '+projectName+'-controller.yaml')
             }
+*/
             break
     }
 }
